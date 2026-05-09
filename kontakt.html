@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontakt | NOVACORE</title>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<header>
+
+  <div class="logo">NOVACORE</div>
+
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="projekte.html">Projekte</a>
+    <a href="ueme.html">Über uns</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+
+  <div class="menu-btn" id="menuBtn">☰</div>
+
+</header>
+
+<section class="contact-page">
+
+  <div class="contact-wrapper">
+
+    <div class="contact-info">
+
+      <span class="contact-tag">KONTAKT</span>
+
+      <h1>Schreib mir eine Nachricht.</h1>
+
+      <p>Ich melde mich so schnell wie möglich zurück.</p>
+
+    </div>
+
+    <div class="contact-card">
+
+      <form class="contact-form" id="contactForm">
+
+        <input type="text" name="name" placeholder="Dein Name" required />
+        <input type="email" name="email" placeholder="Deine E-Mail" required />
+        <textarea name="message" placeholder="Deine Nachricht" required></textarea>
+
+        <button type="submit">Nachricht senden</button>
+
+        <p id="contactText"></p>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- EMAILJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script>
+  emailjs.init("1Dt3MMaUCk4RBQ0ec");
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
